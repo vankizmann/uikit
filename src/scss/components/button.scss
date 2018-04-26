@@ -254,7 +254,7 @@ $button-link-disabled-color:                     $global-muted-color !default;
  * Danger
  */
 
-.uk-button-danger {
+.uk-button-success {
     background-color: $button-success-background;
     color: $button-success-color;
     @if(mixin-exists(hook-button-success)) {@include hook-button-success();}
