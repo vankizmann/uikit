@@ -193,6 +193,18 @@ $button-secondary-hover-background: darken($button-secondary-background, 5%) !de
 $button-secondary-hover-color: $global-inverse-color !default;
 $button-secondary-active-background: darken($button-secondary-background, 10%) !default;
 $button-secondary-active-color: $global-inverse-color !default;
+$button-success-background: $global-success-background !default;
+$button-success-color: $global-inverse-color !default;
+$button-success-hover-background: darken($button-success-background, 5%) !default;
+$button-success-hover-color: $global-inverse-color !default;
+$button-success-active-background: darken($button-success-background, 10%) !default;
+$button-success-active-color: $global-inverse-color !default;
+$button-warning-background: $global-warning-background !default;
+$button-warning-color: $global-inverse-color !default;
+$button-warning-hover-background: darken($button-warning-background, 5%) !default;
+$button-warning-hover-color: $global-inverse-color !default;
+$button-warning-active-background: darken($button-warning-background, 10%) !default;
+$button-warning-active-color: $global-inverse-color !default;
 $button-danger-background: $global-danger-background !default;
 $button-danger-color: $global-inverse-color !default;
 $button-danger-hover-background: darken($button-danger-background, 5%) !default;

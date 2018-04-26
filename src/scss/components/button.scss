@@ -55,6 +55,20 @@ $button-secondary-hover-color:                   $global-inverse-color !default;
 $button-secondary-active-background:             darken($button-secondary-background, 10%) !default;
 $button-secondary-active-color:                  $global-inverse-color !default;
 
+$button-success-background:                       $global-success-background !default;
+$button-success-color:                            $global-inverse-color !default;
+$button-success-hover-background:                 darken($button-success-background, 5%) !default;
+$button-success-hover-color:                      $global-inverse-color !default;
+$button-success-active-background:                darken($button-success-background, 10%) !default;
+$button-success-active-color:                     $global-inverse-color !default;
+
+$button-warning-background:                       $global-warning-background !default;
+$button-warning-color:                            $global-inverse-color !default;
+$button-warning-hover-background:                 darken($button-warning-background, 5%) !default;
+$button-warning-hover-color:                      $global-inverse-color !default;
+$button-warning-active-background:                darken($button-warning-background, 10%) !default;
+$button-warning-active-color:                     $global-inverse-color !default;
+
 $button-danger-background:                       $global-danger-background !default;
 $button-danger-color:                            $global-inverse-color !default;
 $button-danger-hover-background:                 darken($button-danger-background, 5%) !default;
@@ -241,6 +255,58 @@ $button-link-disabled-color:                     $global-muted-color !default;
  */
 
 .uk-button-danger {
+    background-color: $button-success-background;
+    color: $button-success-color;
+    @if(mixin-exists(hook-button-success)) {@include hook-button-success();}
+}
+
+/* Hover + Focus */
+.uk-button-success:hover,
+.uk-button-success:focus {
+    background-color: $button-success-hover-background;
+    color: $button-success-hover-color;
+    @if(mixin-exists(hook-button-success-hover)) {@include hook-button-success-hover();}
+}
+
+/* OnClick + Active */
+.uk-button-success:active,
+.uk-button-success.uk-active {
+    background-color: $button-success-active-background;
+    color: $button-success-active-color;
+    @if(mixin-exists(hook-button-success-active)) {@include hook-button-success-active();}
+}
+
+/*
+ * Danger
+ */
+
+.uk-button-warning {
+    background-color: $button-warning-background;
+    color: $button-warning-color;
+    @if(mixin-exists(hook-button-warning)) {@include hook-button-warning();}
+}
+
+/* Hover + Focus */
+.uk-button-warning:hover,
+.uk-button-warning:focus {
+    background-color: $button-warning-hover-background;
+    color: $button-warning-hover-color;
+    @if(mixin-exists(hook-button-warning-hover)) {@include hook-button-warning-hover();}
+}
+
+/* OnClick + Active */
+.uk-button-warning:active,
+.uk-button-warning.uk-active {
+    background-color: $button-warning-active-background;
+    color: $button-warning-active-color;
+    @if(mixin-exists(hook-button-warning-active)) {@include hook-button-warning-active();}
+}
+
+/*
+ * Danger
+ */
+
+.uk-button-danger {
     background-color: $button-danger-background;
     color: $button-danger-color;
     @if(mixin-exists(hook-button-danger)) {@include hook-button-danger();}
@@ -270,6 +336,8 @@ $button-link-disabled-color:                     $global-muted-color !default;
 .uk-button-default:disabled,
 .uk-button-primary:disabled,
 .uk-button-secondary:disabled,
+.uk-button-success:disabled,
+.uk-button-warning:disabled,
 .uk-button-danger:disabled {
     background-color: $button-disabled-background;
     color: $button-disabled-color;
@@ -394,6 +462,12 @@ $button-link-disabled-color:                     $global-muted-color !default;
 // @mixin hook-button-secondary(){}
 // @mixin hook-button-secondary-hover(){}
 // @mixin hook-button-secondary-active(){}
+// @mixin hook-button-success(){}
+// @mixin hook-button-success-hover(){}
+// @mixin hook-button-success-active(){}
+// @mixin hook-button-warning(){}
+// @mixin hook-button-warning-hover(){}
+// @mixin hook-button-warning-active(){}
 // @mixin hook-button-danger(){}
 // @mixin hook-button-danger-hover(){}
 // @mixin hook-button-danger-active(){}
