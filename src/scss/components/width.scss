@@ -36,6 +36,7 @@ $width-xxlarge-width:                            750px !default;
 .uk-child-width-1-4 > * { width: 25%; }
 .uk-child-width-1-5 > * { width: 20%; }
 .uk-child-width-1-6 > * { width: unquote('calc(100% * 1 / 6.001)'); }
+.uk-child-width-1-12 > * { width: unquote('calc(100% * 1 / 12.001)'); }
 
 .uk-child-width-auto > * { width: auto; }
 
@@ -72,6 +73,7 @@ $width-xxlarge-width:                            750px !default;
     .uk-child-width-1-4\@s > * { width: 25%; }
     .uk-child-width-1-5\@s > * { width: 20%; }
     .uk-child-width-1-6\@s > * { width: unquote('calc(100% * 1 / 6.001)'); }
+    .uk-child-width-1-12\@s > * { width: unquote('calc(100% * 1 / 12.001)'); }
 
     .uk-child-width-auto\@s > * { width: auto; }
     .uk-child-width-expand\@s > * { width: 1px; }
@@ -93,6 +95,7 @@ $width-xxlarge-width:                            750px !default;
     .uk-child-width-1-4\@m > * { width: 25%; }
     .uk-child-width-1-5\@m > * { width: 20%; }
     .uk-child-width-1-6\@m > * { width: unquote('calc(100% * 1 / 6.001)'); }
+    .uk-child-width-1-12\@m > * { width: unquote('calc(100% * 1 / 12.001)'); }
 
     .uk-child-width-auto\@m > * { width: auto; }
     .uk-child-width-expand\@m > * { width: 1px; }
@@ -114,6 +117,7 @@ $width-xxlarge-width:                            750px !default;
     .uk-child-width-1-4\@l > * { width: 25%; }
     .uk-child-width-1-5\@l > * { width: 20%; }
     .uk-child-width-1-6\@l > * { width: unquote('calc(100% * 1 / 6.001)'); }
+    .uk-child-width-1-12\@l > * { width: unquote('calc(100% * 1 / 12.001)'); }
 
     .uk-child-width-auto\@l > * { width: auto; }
     .uk-child-width-expand\@l > * { width: 1px; }
@@ -135,6 +139,7 @@ $width-xxlarge-width:                            750px !default;
     .uk-child-width-1-4\@xl > * { width: 25%; }
     .uk-child-width-1-5\@xl > * { width: 20%; }
     .uk-child-width-1-6\@xl > * { width: unquote('calc(100% * 1 / 6.001)'); }
+    .uk-child-width-1-12\@xl > * { width: unquote('calc(100% * 1 / 12.001)'); }
 
     .uk-child-width-auto\@xl > * { width: auto; }
     .uk-child-width-expand\@xl > * { width: 1px; }
@@ -183,6 +188,20 @@ $width-xxlarge-width:                            750px !default;
 .uk-width-1-6 { width: unquote('calc(100% * 1 / 6.001)'); }
 .uk-width-5-6 { width: unquote('calc(100% * 5 / 6.001)'); }
 
+/* Twelveth */
+.uk-width-1-12 { width: unquote('calc(100% * 1 / 12.001)'); }
+.uk-width-2-12 { width: unquote('calc(100% * 2 / 12.001)'); }
+.uk-width-3-12 { width: unquote('calc(100% * 3 / 12.001)'); }
+.uk-width-4-12 { width: unquote('calc(100% * 4 / 12.001)'); }
+.uk-width-5-12 { width: unquote('calc(100% * 5 / 12.001)'); }
+.uk-width-6-12 { width: unquote('calc(100% * 6 / 12.001)'); }
+.uk-width-7-12 { width: unquote('calc(100% * 7 / 12.001)'); }
+.uk-width-8-12 { width: unquote('calc(100% * 8 / 12.001)'); }
+.uk-width-9-12 { width: unquote('calc(100% * 9 / 12.001)'); }
+.uk-width-10-12 { width: unquote('calc(100% * 10 / 12.001)'); }
+.uk-width-11-12 { width: unquote('calc(100% * 11 / 12.001)'); }
+.uk-width-12-12 { width: unquote('calc(100% * 12 / 12.001)'); }
+
 /* Pixel */
 .uk-width-small { width: $width-small-width; }
 .uk-width-medium { width: $width-medium-width; }
@@ -227,6 +246,20 @@ $width-xxlarge-width:                            750px !default;
     /* Sixths */
     .uk-width-1-6\@s { width: unquote('calc(100% * 1 / 6.001)'); }
     .uk-width-5-6\@s { width: unquote('calc(100% * 5 / 6.001)'); }
+
+    /* Twelveth */
+    .uk-width-1-12\@s { width: unquote('calc(100% * 1 / 12.001)'); }
+    .uk-width-2-12\@s { width: unquote('calc(100% * 2 / 12.001)'); }
+    .uk-width-3-12\@s { width: unquote('calc(100% * 3 / 12.001)'); }
+    .uk-width-4-12\@s { width: unquote('calc(100% * 4 / 12.001)'); }
+    .uk-width-5-12\@s { width: unquote('calc(100% * 5 / 12.001)'); }
+    .uk-width-6-12\@s { width: unquote('calc(100% * 6 / 12.001)'); }
+    .uk-width-7-12\@s { width: unquote('calc(100% * 7 / 12.001)'); }
+    .uk-width-8-12\@s { width: unquote('calc(100% * 8 / 12.001)'); }
+    .uk-width-9-12\@s { width: unquote('calc(100% * 9 / 12.001)'); }
+    .uk-width-10-12\@s { width: unquote('calc(100% * 10 / 12.001)'); }
+    .uk-width-11-12\@s { width: unquote('calc(100% * 11 / 12.001)'); }
+    .uk-width-12-12\@s { width: unquote('calc(100% * 12 / 12.001)'); }
 
     /* Pixel */
     .uk-width-small\@s { width: $width-small-width; }
@@ -275,6 +308,20 @@ $width-xxlarge-width:                            750px !default;
     .uk-width-1-6\@m { width: unquote('calc(100% * 1 / 6.001)'); }
     .uk-width-5-6\@m { width: unquote('calc(100% * 5 / 6.001)'); }
 
+    /* Twelveth */
+    .uk-width-1-12\@m { width: unquote('calc(100% * 1 / 12.001)'); }
+    .uk-width-2-12\@m { width: unquote('calc(100% * 2 / 12.001)'); }
+    .uk-width-3-12\@m { width: unquote('calc(100% * 3 / 12.001)'); }
+    .uk-width-4-12\@m { width: unquote('calc(100% * 4 / 12.001)'); }
+    .uk-width-5-12\@m { width: unquote('calc(100% * 5 / 12.001)'); }
+    .uk-width-6-12\@m { width: unquote('calc(100% * 6 / 12.001)'); }
+    .uk-width-7-12\@m { width: unquote('calc(100% * 7 / 12.001)'); }
+    .uk-width-8-12\@m { width: unquote('calc(100% * 8 / 12.001)'); }
+    .uk-width-9-12\@m { width: unquote('calc(100% * 9 / 12.001)'); }
+    .uk-width-10-12\@m { width: unquote('calc(100% * 10 / 12.001)'); }
+    .uk-width-11-12\@m { width: unquote('calc(100% * 11 / 12.001)'); }
+    .uk-width-12-12\@m { width: unquote('calc(100% * 12 / 12.001)'); }
+
     /* Pixel */
     .uk-width-small\@m { width: $width-small-width; }
     .uk-width-medium\@m { width: $width-medium-width; }
@@ -322,6 +369,20 @@ $width-xxlarge-width:                            750px !default;
     .uk-width-1-6\@l { width: unquote('calc(100% * 1 / 6.001)'); }
     .uk-width-5-6\@l { width: unquote('calc(100% * 5 / 6.001)'); }
 
+    /* Twelveth */
+    .uk-width-1-12\@l { width: unquote('calc(100% * 1 / 12.001)'); }
+    .uk-width-2-12\@l { width: unquote('calc(100% * 2 / 12.001)'); }
+    .uk-width-3-12\@l { width: unquote('calc(100% * 3 / 12.001)'); }
+    .uk-width-4-12\@l { width: unquote('calc(100% * 4 / 12.001)'); }
+    .uk-width-5-12\@l { width: unquote('calc(100% * 5 / 12.001)'); }
+    .uk-width-6-12\@l { width: unquote('calc(100% * 6 / 12.001)'); }
+    .uk-width-7-12\@l { width: unquote('calc(100% * 7 / 12.001)'); }
+    .uk-width-8-12\@l { width: unquote('calc(100% * 8 / 12.001)'); }
+    .uk-width-9-12\@l { width: unquote('calc(100% * 9 / 12.001)'); }
+    .uk-width-10-12\@l { width: unquote('calc(100% * 10 / 12.001)'); }
+    .uk-width-11-12\@l { width: unquote('calc(100% * 11 / 12.001)'); }
+    .uk-width-12-12\@l { width: unquote('calc(100% * 12 / 12.001)'); }
+
     /* Pixel */
     .uk-width-small\@l { width: $width-small-width; }
     .uk-width-medium\@l { width: $width-medium-width; }
@@ -368,6 +429,20 @@ $width-xxlarge-width:                            750px !default;
     /* Sixths */
     .uk-width-1-6\@xl { width: unquote('calc(100% * 1 / 6.001)'); }
     .uk-width-5-6\@xl { width: unquote('calc(100% * 5 / 6.001)'); }
+
+    /* Twelveth */
+    .uk-width-1-12\@xl { width: unquote('calc(100% * 1 / 12.001)'); }
+    .uk-width-2-12\@xl { width: unquote('calc(100% * 2 / 12.001)'); }
+    .uk-width-3-12\@xl { width: unquote('calc(100% * 3 / 12.001)'); }
+    .uk-width-4-12\@xl { width: unquote('calc(100% * 4 / 12.001)'); }
+    .uk-width-5-12\@xl { width: unquote('calc(100% * 5 / 12.001)'); }
+    .uk-width-6-12\@xl { width: unquote('calc(100% * 6 / 12.001)'); }
+    .uk-width-7-12\@xl { width: unquote('calc(100% * 7 / 12.001)'); }
+    .uk-width-8-12\@xl { width: unquote('calc(100% * 8 / 12.001)'); }
+    .uk-width-9-12\@xl { width: unquote('calc(100% * 9 / 12.001)'); }
+    .uk-width-10-12\@xl { width: unquote('calc(100% * 10 / 12.001)'); }
+    .uk-width-11-12\@xl { width: unquote('calc(100% * 11 / 12.001)'); }
+    .uk-width-12-12\@xl { width: unquote('calc(100% * 12 / 12.001)'); }
 
     /* Pixel */
     .uk-width-small\@xl { width: $width-small-width; }

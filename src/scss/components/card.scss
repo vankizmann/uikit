@@ -68,12 +68,31 @@ $card-secondary-title-color:                    $card-secondary-color !default;
 $card-secondary-hover-background:               darken($card-secondary-background, 5%) !default;
 $card-secondary-color-mode:                     light !default;
 
+$card-success-background:                       $global-success-background !default;
+$card-success-color:                            $global-inverse-color !default;
+$card-success-title-color:                      $card-success-color !default;
+$card-success-hover-background:                 darken($card-success-background, 5%) !default;
+$card-success-color-mode:                       light !default;
+
+$card-warning-background:                       $global-warning-background !default;
+$card-warning-color:                            $global-inverse-color !default;
+$card-warning-title-color:                      $card-warning-color !default;
+$card-warning-hover-background:                 darken($card-warning-background, 5%) !default;
+$card-warning-color-mode:                       light !default;
+
+$card-danger-background:                       $global-danger-background !default;
+$card-danger-color:                            $global-inverse-color !default;
+$card-danger-title-color:                      $card-danger-color !default;
+$card-danger-hover-background:                 darken($card-danger-background, 5%) !default;
+$card-danger-color-mode:                       light !default;
+
 $card-small-body-padding-horizontal:            $global-margin !default;
 $card-small-body-padding-vertical:              $global-margin !default;
 $card-small-header-padding-horizontal:          $global-margin !default;
 $card-small-header-padding-vertical:            round($global-margin / 1.5) !default;
 $card-small-footer-padding-horizontal:          $global-margin !default;
 $card-small-footer-padding-vertical:            round($global-margin / 1.5) !default;
+
 
 $card-large-body-padding-horizontal-l:          $global-large-gutter !default;
 $card-large-body-padding-vertical-l:            $global-large-gutter !default;
@@ -212,7 +231,7 @@ $card-large-footer-padding-vertical-l:          round($global-large-gutter / 2) 
 /* Hover modifier
  ========================================================================== */
 
-.uk-card-hover:not(.uk-card-default):not(.uk-card-primary):not(.uk-card-secondary):hover {
+.uk-card-hover:not(.uk-card-default):not(.uk-card-primary):not(.uk-card-secondary):not(.uk-card-success):not(.uk-card-warning):not(.uk-card-danger):hover {
     background: $card-hover-background;
     @if(mixin-exists(hook-card-hover)) {@include hook-card-hover();}
 }
@@ -302,6 +321,84 @@ $card-large-footer-padding-vertical-l:          round($global-large-gutter / 2) 
 @if ( $card-secondary-color-mode == dark ) { .uk-card-secondary.uk-card-body { @extend .uk-dark !optional;} }
 @if ( $card-secondary-color-mode == dark ) { .uk-card-secondary > :not([class*='uk-card-media']) { @extend .uk-dark !optional;} }
 
+/*
+ * Success
+ */
+
+.uk-card-success {
+    background: $card-success-background;
+    color: $card-success-color;
+    @if(mixin-exists(hook-card-success)) {@include hook-card-success();}
+}
+
+.uk-card-success .uk-card-title {
+    color: $card-success-title-color;
+    @if(mixin-exists(hook-card-success-title)) {@include hook-card-success-title();}
+}
+
+.uk-card-success.uk-card-hover:hover {
+    background-color: $card-success-hover-background;
+    @if(mixin-exists(hook-card-success-hover)) {@include hook-card-success-hover();}
+}
+
+// Color Mode
+@if ( $card-success-color-mode == light ) { .uk-card-success.uk-card-body { @extend .uk-light !optional;} }
+@if ( $card-success-color-mode == light ) { .uk-card-success > :not([class*='uk-card-media']) { @extend .uk-light !optional;} }
+@if ( $card-success-color-mode == dark ) { .uk-card-success.uk-card-body { @extend .uk-dark !optional;} }
+@if ( $card-success-color-mode == dark ) { .uk-card-success > :not([class*='uk-card-media']) { @extend .uk-dark !optional;} }
+
+
+/*
+ * Warning
+ */
+
+.uk-card-warning {
+    background: $card-warning-background;
+    color: $card-warning-color;
+    @if(mixin-exists(hook-card-warning)) {@include hook-card-warning();}
+}
+
+.uk-card-warning .uk-card-title {
+    color: $card-warning-title-color;
+    @if(mixin-exists(hook-card-warning-title)) {@include hook-card-warning-title();}
+}
+
+.uk-card-warning.uk-card-hover:hover {
+    background-color: $card-warning-hover-background;
+    @if(mixin-exists(hook-card-warning-hover)) {@include hook-card-warning-hover();}
+}
+
+// Color Mode
+@if ( $card-warning-color-mode == light ) { .uk-card-warning.uk-card-body { @extend .uk-light !optional;} }
+@if ( $card-warning-color-mode == light ) { .uk-card-warning > :not([class*='uk-card-media']) { @extend .uk-light !optional;} }
+@if ( $card-warning-color-mode == dark ) { .uk-card-warning.uk-card-body { @extend .uk-dark !optional;} }
+@if ( $card-warning-color-mode == dark ) { .uk-card-warning > :not([class*='uk-card-media']) { @extend .uk-dark !optional;} }
+
+/*
+ * Danger
+ */
+
+.uk-card-danger {
+    background: $card-danger-background;
+    color: $card-danger-color;
+    @if(mixin-exists(hook-card-danger)) {@include hook-card-danger();}
+}
+
+.uk-card-danger .uk-card-title {
+    color: $card-danger-title-color;
+    @if(mixin-exists(hook-card-danger-title)) {@include hook-card-danger-title();}
+}
+
+.uk-card-danger.uk-card-hover:hover {
+    background-color: $card-danger-hover-background;
+    @if(mixin-exists(hook-card-danger-hover)) {@include hook-card-danger-hover();}
+}
+
+// Color Mode
+@if ( $card-danger-color-mode == light ) { .uk-card-danger.uk-card-body { @extend .uk-light !optional;} }
+@if ( $card-danger-color-mode == light ) { .uk-card-danger > :not([class*='uk-card-media']) { @extend .uk-light !optional;} }
+@if ( $card-danger-color-mode == dark ) { .uk-card-danger.uk-card-body { @extend .uk-dark !optional;} }
+@if ( $card-danger-color-mode == dark ) { .uk-card-danger > :not([class*='uk-card-media']) { @extend .uk-dark !optional;} }
 
 /* Size modifier
  ========================================================================== */
