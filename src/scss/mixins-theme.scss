@@ -330,6 +330,12 @@
 @mixin hook-button-danger(){ border: $button-border-width solid transparent; }
 @mixin hook-button-danger-hover(){}
 @mixin hook-button-danger-active(){}
+@mixin hook-button-warning(){ border: $button-border-width solid transparent; }
+@mixin hook-button-warning-hover(){}
+@mixin hook-button-warning-active(){}
+@mixin hook-button-success(){ border: $button-border-width solid transparent; }
+@mixin hook-button-success-hover(){}
+@mixin hook-button-success-active(){}
 @mixin hook-button-disabled(){ border-color: $button-disabled-border; }
 @mixin hook-button-small(){}
 @mixin hook-button-large(){}
