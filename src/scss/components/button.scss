@@ -8,6 +8,8 @@
 // Modifiers:       `uk-button-default`
 //                  `uk-button-primary`
 //                  `uk-button-secondary`
+//                  `uk-button-success`
+//                  `uk-button-warning`
 //                  `uk-button-danger`
 //                  `uk-button-text`
 //                  `uk-button-link`
@@ -115,7 +117,7 @@ $button-link-disabled-color:                     $global-muted-color !default;
     /* 2 */
     border: none;
     /* 3 */
-    border-radius: 0;
+    border-radius: $global-border-radius;
     /* 4 */
     overflow: visible;
     /* 5 */
